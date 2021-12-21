@@ -1,0 +1,61 @@
+Calling: mdrun -c frame40.gro -s frame40.tpr -x frame40.xtc -cpt 15 -nt 11 -ntmpi 1
+Steps: first=5000000 total=5125000
+Compiled SIMD: AVX2_256, but for this host/run AVX_512 might be better (see
+log).
+The current CPU can measure timings more accurately than the code in
+GROMACS was configured to use. This might affect your simulation
+speed as accurate timings are needed for load-balancing.
+Please consider rebuilding GROMACS with the GMX_USE_RDTSCP=ON CMake option.
+Reading file frame40.tpr, VERSION 2020.2 (single precision)
+
+This run will default to '-update gpu' as requested by the GMX_FORCE_UPDATE_DEFAULT_GPU environment variable. GPU update with domain decomposition lacks substantial testing and should be used with caution.
+Can not increase nstlist because verlet-buffer-tolerance is not set or used
+
+Update task on the GPU was required, by the GMX_FORCE_UPDATE_DEFAULT_GPU environment variable, but the following condition(s) were not satisfied:
+
+Either PME or short-ranged non-bonded interaction tasks must run on the GPU.
+Compatible GPUs must have been found.
+Only a CUDA build is supported.
+Virtual sites are not supported.
+Non-connecting constraints are not supported
+The number of coupled constraints is higher than supported in the CUDA LINCS code.
+
+Will use CPU version of update.
+
+Using 1 MPI thread
+Completed 1 out of 125000 steps (0%)
+Completed 1250 out of 125000 steps (1%)
+Completed 2500 out of 125000 steps (2%)
+Completed 3750 out of 125000 steps (3%)
+Completed 5000 out of 125000 steps (4%)
+Completed 6250 out of 125000 steps (5%)
+Completed 7500 out of 125000 steps (6%)
+Completed 8750 out of 125000 steps (7%)
+Completed 10000 out of 125000 steps (8%)
+Completed 11250 out of 125000 steps (9%)
+Completed 12500 out of 125000 steps (10%)
+Using 11 OpenMP threads 
+
+
+Non-default thread affinity set probably by the OpenMP library,
+disabling internal thread affinity
+Setting the maximum number of constraint warnings to 2147483647
+
+WARNING: Changing nstcomm from 5 to 10
+starting mdrun 'Protein in water'
+5125000 steps,  20500.0 ps (continuing from step 5000000,  20000.0 ps).
+Completed 13750 out of 125000 steps (11%)
+Completed 15000 out of 125000 steps (12%)
+Completed 16250 out of 125000 steps (13%)
+Completed 17500 out of 125000 steps (14%)
+Completed 18750 out of 125000 steps (15%)
+Completed 20000 out of 125000 steps (16%)
+Completed 21250 out of 125000 steps (17%)
+Completed 22500 out of 125000 steps (18%)
+Completed 23750 out of 125000 steps (19%)
+Completed 25000 out of 125000 steps (20%)
+Completed 26250 out of 125000 steps (21%)
+Completed 27500 out of 125000 steps (22%)
+Completed 28750 out of 125000 steps (23%)
+WARNING:Console control signal 2 on PID 12412
+Exiting, please wait. . .

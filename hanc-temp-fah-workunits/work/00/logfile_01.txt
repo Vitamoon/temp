@@ -1,0 +1,89 @@
+*********************** Log Started 2021-10-09T23:45:54Z ***********************
+************************** Gromacs Folding@home Core ***************************
+       Core: Gromacs
+       Type: 0xa8
+    Version: 0.0.12
+     Author: Joseph Coffland <joseph@cauldrondevelopment.com>
+  Copyright: 2020 foldingathome.org
+   Homepage: https://foldingathome.org/
+       Date: Jan 16 2021
+       Time: 12:29:40
+   Revision: c5816759c404e4b65f9f364c3d1ef554a67c4225
+     Branch: master
+   Compiler: Visual C++ 2019 16.7
+    Options: /TP /std:c++14 /nologo /EHa /wd4297 /wd4103 /O2 /Zc:throwingNew /MT
+   Platform: win32 10
+       Bits: 64
+       Mode: Release
+       SIMD: avx2_256
+     OpenMP: ON
+       CUDA: OFF
+       Args: -dir 00 -suffix 01 -version 706 -lifeline 12376 -checkpoint 15 -np
+             11
+************************************ libFAH ************************************
+       Date: Jan 16 2021
+       Time: 11:24:13
+   Revision: c5816759c404e4b65f9f364c3d1ef554a67c4225
+     Branch: master
+   Compiler: Visual C++ 2019 16.7
+    Options: /TP /std:c++14 /nologo /EHa /wd4297 /wd4103 /O2 /Zc:throwingNew /MT
+   Platform: win32 10
+       Bits: 64
+       Mode: Release
+************************************ CBang *************************************
+       Date: Jan 16 2021
+       Time: 11:23:53
+   Revision: c5816759c404e4b65f9f364c3d1ef554a67c4225
+     Branch: master
+   Compiler: Visual C++ 2019 16.7
+    Options: /TP /std:c++14 /nologo /EHa /wd4297 /wd4103 /O2 /Zc:throwingNew /MT
+   Platform: win32 10
+       Bits: 64
+       Mode: Release
+************************************ System ************************************
+        CPU: 11th Gen Intel(R) Core(TM) i5-11600K @ 3.90GHz
+     CPU ID: GenuineIntel Family 6 Model 167 Stepping 1
+       CPUs: 12
+     Memory: 15.79GiB
+Free Memory: 11.77GiB
+    Threads: WINDOWS_THREADS
+ OS Version: 6.2
+Has Battery: false
+ On Battery: false
+ UTC Offset: -7
+        PID: 12412
+        CWD: C:\Users\Hanc\Desktop\work
+********************************************************************************
+Project: 18206 (Run 125, Clone 5, Gen 40)
+Unit: 0x00000000000000000000000000000000
+Reading tar file core.xml
+Reading tar file frame40.tpr
+Digital signatures verified
+Calling: mdrun -c frame40.gro -s frame40.tpr -x frame40.xtc -cpt 15 -nt 11 -ntmpi 1
+Steps: first=5000000 total=5125000
+Completed 1 out of 125000 steps (0%)
+Completed 1250 out of 125000 steps (1%)
+Completed 2500 out of 125000 steps (2%)
+Completed 3750 out of 125000 steps (3%)
+Completed 5000 out of 125000 steps (4%)
+Completed 6250 out of 125000 steps (5%)
+Completed 7500 out of 125000 steps (6%)
+Completed 8750 out of 125000 steps (7%)
+Completed 10000 out of 125000 steps (8%)
+Completed 11250 out of 125000 steps (9%)
+Completed 12500 out of 125000 steps (10%)
+Completed 13750 out of 125000 steps (11%)
+Completed 15000 out of 125000 steps (12%)
+Completed 16250 out of 125000 steps (13%)
+Completed 17500 out of 125000 steps (14%)
+Completed 18750 out of 125000 steps (15%)
+Completed 20000 out of 125000 steps (16%)
+Completed 21250 out of 125000 steps (17%)
+Completed 22500 out of 125000 steps (18%)
+Completed 23750 out of 125000 steps (19%)
+Completed 25000 out of 125000 steps (20%)
+Completed 26250 out of 125000 steps (21%)
+Completed 27500 out of 125000 steps (22%)
+Completed 28750 out of 125000 steps (23%)
+WARNING:Console control signal 2 on PID 12412
+Exiting, please wait. . .
